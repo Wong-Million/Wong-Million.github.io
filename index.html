@@ -14,6 +14,13 @@
 
 
 
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-center-atom.min.css?v=1.0.2" rel="stylesheet">
+
 
 
 
@@ -79,11 +86,14 @@
 
 
 
+<meta name="description" content="一个很不错的中国小伙子">
 <meta property="og:type" content="website">
-<meta property="og:title" content="阿拉丁与LED灯">
+<meta property="og:title" content="阿拉丁与LED灯的博客">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="阿拉丁与LED灯">
-<meta property="article:author" content="Loki">
+<meta property="og:site_name" content="阿拉丁与LED灯的博客">
+<meta property="og:description" content="一个很不错的中国小伙子">
+<meta property="article:author" content="阿拉丁与LED灯">
+<meta property="article:tag" content="路上都是风景">
 <meta name="twitter:card" content="summary">
 
 
@@ -120,7 +130,7 @@
 
 
 
-  <title>阿拉丁与LED灯</title>
+  <title>阿拉丁与LED灯的博客</title>
   
 
 
@@ -142,6 +152,7 @@
   <div class="container sidebar-position-left 
   page-home">
     <div class="headband"></div>
+    <a href="https://github.com/Wong-Million" target="_blank" rel="noopener" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
@@ -151,7 +162,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">阿拉丁与LED灯</span>
+        <span class="site-title">阿拉丁与LED灯的博客</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -216,6 +227,16 @@
         </li>
       
         
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
+            
+            日程表
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-相册">
           <a href="/photos/" rel="section">
             
@@ -237,9 +258,43 @@
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
   
 </nav>
 
@@ -271,13 +326,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/16/5.5%20%E6%9B%B2%E7%BA%BF%E6%8B%9F%E5%90%88/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Loki">
+      <meta itemprop="name" content="阿拉丁与LED灯">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/%E5%A4%B4%E5%83%8F1.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="阿拉丁与LED灯">
+      <meta itemprop="name" content="阿拉丁与LED灯的博客">
     </span>
 
     
@@ -310,8 +365,40 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/MatLab/" itemprop="url" rel="index">
+                    <span itemprop="name">MatLab</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2020/05/16/5.5%20%E6%9B%B2%E7%BA%BF%E6%8B%9F%E5%90%88/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2020/05/16/5.5%20%E6%9B%B2%E7%BA%BF%E6%8B%9F%E5%90%88/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -320,6 +407,37 @@
 
           
 
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  4
+                </span>
+              
+            </div>
           
 
           
@@ -339,120 +457,23 @@
       
         
           
-            <p>因为数据插值在测量时有误差，因此有了曲线拟合</p>
-<h2 id="color-orange-1-引例-人口预测问题"><a href="#color-orange-1-引例-人口预测问题" class="headerlink" title="$\color{orange}{1.引例-人口预测问题}$"></a>$\color{orange}{1.引例-人口预测问题}$</h2><blockquote>
-<p>例题 人口增长是当今世界上都关注的问题，对人口增长趋势进行预测是各国普遍的做法。已知某国1790年到2010年间历次人口普查数据如下表所示，请预测该过2020年的人口数。</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th>年份</th>
-<th>1790</th>
-<th>1800</th>
-<th>1810</th>
-<th>1820</th>
-<th>1830</th>
-<th>1840</th>
-<th>1850</th>
-<th>1860</th>
-<th>1870</th>
-<th>1880</th>
-<th>1890</th>
-<th>1900</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>人口（百万）</td>
-<td>22.2</td>
-<td>46.3</td>
-<td>48.3</td>
-<td>51.1</td>
-<td>77.3</td>
-<td>88.2</td>
-<td>89.8</td>
-<td>100.6</td>
-<td>105.2</td>
-<td>114.4</td>
-<td>119</td>
-<td>120.7</td>
-</tr>
-<tr>
-<td>年份</td>
-<td>1910</td>
-<td>1920</td>
-<td>1930</td>
-<td>1940</td>
-<td>1950</td>
-<td>1960</td>
-<td>1970</td>
-<td>1980</td>
-<td>1990</td>
-<td>2000</td>
-<td>2010</td>
-<td></td>
-</tr>
-<tr>
-<td>人口（百万）</td>
-<td>120.7</td>
-<td>159.2</td>
-<td>179.2</td>
-<td>186.2</td>
-<td>205.2</td>
-<td>205.7</td>
-<td>227.4</td>
-<td>249.7</td>
-<td>261.3</td>
-<td>294.9</td>
-<td>296.4</td>
-<td></td>
-</tr>
-</tbody></table>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">x=<span class="number">1790</span>:<span class="number">10</span>:<span class="number">2010</span></span><br><span class="line">y=[<span class="number">22.2000000000000</span>,<span class="number">46.3000000000000</span>,<span class="number">48.3000000000000</span>,<span class="number">51.1000000000000</span>,<span class="number">77.3000000000000</span>,<span class="number">88.2000000000000</span>,<span class="number">89.8000000000000</span>,<span class="number">100.600000000000</span>,<span class="number">105.200000000000</span>,<span class="number">114.400000000000</span>,<span class="number">119</span>,<span class="number">120.700000000000</span>,<span class="number">120.700000000000</span>,<span class="number">159.200000000000</span>,<span class="number">179.200000000000</span>,<span class="number">186.200000000000</span>,<span class="number">205.200000000000</span>,<span class="number">205.700000000000</span>,<span class="number">227.400000000000</span>,<span class="number">249.700000000000</span>,<span class="number">261.300000000000</span>,<span class="number">294.900000000000</span>,<span class="number">296.400000000000</span>]</span><br><span class="line"><span class="built_in">figure</span>(<span class="number">1</span>)</span><br><span class="line"><span class="built_in">plot</span>(x,y,<span class="string">'*'</span>)<span class="comment">%绘制散点图</span></span><br><span class="line"></span><br><span class="line">p=polyfit(x,y,<span class="number">3</span>)<span class="comment">%建立3次多项式，逼近样本数据，多项式系数保存在p中</span></span><br><span class="line">polyval(p,<span class="number">2020</span>)<span class="comment">%计算在2020的函数值y，即人口数</span></span><br><span class="line"><span class="built_in">figure</span>(<span class="number">2</span>)</span><br><span class="line"><span class="built_in">plot</span>(x,y,<span class="string">'*'</span>,x,polyval(p,x))</span><br></pre></td></tr></table></figure>
-<p>输出结果</p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt; mat_5</span><br><span class="line"></span><br><span class="line">x =</span><br><span class="line"></span><br><span class="line">  列 <span class="number">1</span> 至 <span class="number">6</span></span><br><span class="line"></span><br><span class="line">        <span class="number">1790</span>        <span class="number">1800</span>        <span class="number">1810</span>        <span class="number">1820</span>        <span class="number">1830</span>        <span class="number">1840</span></span><br><span class="line"></span><br><span class="line">  列 <span class="number">7</span> 至 <span class="number">12</span></span><br><span class="line"></span><br><span class="line">        <span class="number">1850</span>        <span class="number">1860</span>        <span class="number">1870</span>        <span class="number">1880</span>        <span class="number">1890</span>        <span class="number">1900</span></span><br><span class="line"></span><br><span class="line">  列 <span class="number">13</span> 至 <span class="number">18</span></span><br><span class="line"></span><br><span class="line">        <span class="number">1910</span>        <span class="number">1920</span>        <span class="number">1930</span>        <span class="number">1940</span>        <span class="number">1950</span>        <span class="number">1960</span></span><br><span class="line"></span><br><span class="line">  列 <span class="number">19</span> 至 <span class="number">23</span></span><br><span class="line"></span><br><span class="line">        <span class="number">1970</span>        <span class="number">1980</span>        <span class="number">1990</span>        <span class="number">2000</span>        <span class="number">2010</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">y =</span><br><span class="line"></span><br><span class="line">  列 <span class="number">1</span> 至 <span class="number">8</span></span><br><span class="line"></span><br><span class="line">   <span class="number">22.2000</span>   <span class="number">46.3000</span>   <span class="number">48.3000</span>   <span class="number">51.1000</span>   <span class="number">77.3000</span>   <span class="number">88.2000</span>   <span class="number">89.8000</span>  <span class="number">100.6000</span></span><br><span class="line"></span><br><span class="line">  列 <span class="number">9</span> 至 <span class="number">16</span></span><br><span class="line"></span><br><span class="line">  <span class="number">105.2000</span>  <span class="number">114.4000</span>  <span class="number">119.0000</span>  <span class="number">120.7000</span>  <span class="number">120.7000</span>  <span class="number">159.2000</span>  <span class="number">179.2000</span>  <span class="number">186.2000</span></span><br><span class="line"></span><br><span class="line">  列 <span class="number">17</span> 至 <span class="number">23</span></span><br><span class="line"></span><br><span class="line">  <span class="number">205.2000</span>  <span class="number">205.7000</span>  <span class="number">227.4000</span>  <span class="number">249.7000</span>  <span class="number">261.3000</span>  <span class="number">294.9000</span>  <span class="number">296.4000</span></span><br><span class="line"></span><br><span class="line">警告: 多项式未正确设置条件。请添加具有不同 X 值的点，减少多项式的次数，或者尝试按照 HELP</span><br><span class="line">POLYFIT 中所述进行中心化和缩放。 </span><br><span class="line">&gt; In polyfit (line <span class="number">79</span>)</span><br><span class="line">  In mat_5 (line <span class="number">135</span>) </span><br><span class="line"></span><br><span class="line">p =</span><br><span class="line"></span><br><span class="line">   <span class="number">1.0e+05</span> *</span><br><span class="line"></span><br><span class="line">    <span class="number">0.0000</span>   <span class="number">-0.0000</span>    <span class="number">0.0019</span>   <span class="number">-1.1856</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"></span><br><span class="line">  <span class="number">331.7793</span></span><br></pre></td></tr></table></figure>
-<p><img src="pics%5C%E4%BA%BA%E5%8F%A31.png" alt=""><br><img src="pics%5C%E4%BA%BA%E5%8F%A32.png" alt=""></p>
-<h2 id="color-orange-2-曲线拟合原理"><a href="#color-orange-2-曲线拟合原理" class="headerlink" title="$\color{orange}{2.曲线拟合原理}$"></a>$\color{orange}{2.曲线拟合原理}$</h2><p>与数据插值类似，曲线拟合也是一种函数逼近的方法</p>
-<p>$\begin{array}<br>{c|lcr}x&amp;x_1&amp;x_2&amp;…&amp;x_k&amp;…&amp;x_n \ \hline y&amp;y_1&amp;y_2&amp;…&amp;y_k&amp;…&amp;y_n<br>\end{array}$<br> $\implies$ $y=f(x)$ $\impliedby$ $y=g(x)$</p>
-<p>构造函数g（x）去逼近位置函数f（x），使得误差</p>
-<p>$\delta_i=g(x_i)-f(x_i)$<br>在某种意义下达到最小</p>
-<blockquote>
-<h3 id="两个问题："><a href="#两个问题：" class="headerlink" title="两个问题："></a>两个问题：</h3></blockquote>
-<p>（1）用什么类型的函数做逼近函数</p>
-<ul>
-<li>多项式函数</li>
-</ul>
-<p>（2）误差最小到底怎么计算</p>
-<ul>
-<li>最小二乘法<ul>
-<li>最小二乘法又称最小平方法，是一种数学优化技术。它通过最小化误差的平方和来寻找数据最佳的函数匹配。</li>
-</ul>
-</li>
-</ul>
-<p>设p(x)是一个多项式函数</p>
-<p>$$p(x)=a_mx^m+a_{m-1}x^{m-1}+…+a_1x+a_0$$</p>
-<p>且<br>$$\sum_{i=1}^n(p(x_i)-y_i)^2$$</p>
-<p>的值最小，则p(x)为原函数y=f(x)的逼近函数</p>
-<h2 id="color-orange-3-曲线拟合的实现方法"><a href="#color-orange-3-曲线拟合的实现方法" class="headerlink" title="$\color{orange}{3.曲线拟合的实现方法}$"></a>$\color{orange}{3.曲线拟合的实现方法}$</h2><ul>
-<li>polyfit()：多项式拟合函数，求得最小二乘拟合多项式系数。调用格式如下：<ul>
-<li>polyfit(x,y,n)：曲线拟合函数。用多项式求过已知点的表达式，其中x为源数据点对应的横坐标，可为行向量、矩阵，y为源数据点对应的纵坐标，可为行向量、矩阵，n为你要拟合的阶数，一阶直线拟合，二阶抛物线拟合，并非阶次越高越好，看拟合情况而定。</li>
-<li>[p,s]=polyfit(x,y,m)</li>
-<li>[p,s,mu]=polyfit(x,y,m)</li>
-</ul>
-</li>
-</ul>
-<p>根据样本数据x，y，产生一个m次多项式p及其在采样点误差数据s。mu是一个二元向量，mu（1）是mean（x），mu（2）是std（x）</p>
-<h2 id="color-orange-4-实际应用"><a href="#color-orange-4-实际应用" class="headerlink" title="$\color{orange}{4.实际应用}$"></a>$\color{orange}{4.实际应用}$</h2><p>减小拟合误差的方法，是分段拟合，一个时间段有一个时间段的规律</p>
-<ul>
-<li>要对问题的背景进行详细的分析</li>
-<li>采样点并非越多越好，适当的时候可以减少采样点，分段进行拟合</li>
-</ul>
-<h3 id="曲线拟合的三种功能"><a href="#曲线拟合的三种功能" class="headerlink" title="曲线拟合的三种功能"></a>曲线拟合的三种功能</h3><ul>
-<li>估算数据</li>
-<li>预测趋势</li>
-<li>总结规律</li>
-</ul>
+          hexo官网
+因为数据插值在测量时有误差，因此有了曲线拟合
+$\color{orange}{1.引例-人口预测问题}$
+例题 人口增长是当今世界上都关注的问题，对人口增长趋势进行预测是各国普遍的做法。已知某国1790年到2010年间历次人口普查数据如下表所示，请预测该过2020年的人口数。
 
-          
+
+
+
+
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/05/16/5.5%20%E6%9B%B2%E7%BA%BF%E6%8B%9F%E5%90%88/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -502,13 +523,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/12/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Loki">
+      <meta itemprop="name" content="阿拉丁与LED灯">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/%E5%A4%B4%E5%83%8F1.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="阿拉丁与LED灯">
+      <meta itemprop="name" content="阿拉丁与LED灯的博客">
     </span>
 
     
@@ -566,6 +587,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2020/05/12/hello-world/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2020/05/12/hello-world/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -573,6 +604,37 @@
 
           
 
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  73
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
           
 
           
@@ -592,21 +654,15 @@
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/05/12/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -675,8 +731,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <p class="site-author-name" itemprop="name">Loki</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <img class="site-author-image" itemprop="image"
+                src="/images/%E5%A4%B4%E5%83%8F1.jpg"
+                alt="阿拉丁与LED灯" />
+            
+              <p class="site-author-name" itemprop="name">阿拉丁与LED灯</p>
+              <p class="site-description motion-element" itemprop="description">一个很不错的中国小伙子</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -697,7 +757,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -708,7 +768,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -727,6 +787,12 @@
                         <i class="fa fa-fw fa-github"></i>GitHub</a>
                   </span>
                 
+                  <span class="links-of-author-item">
+                    <a href="https://weibo.com/p/1005056576801127/home?from=page_100505&mod=TAB&is_all=1#place" target="_blank" title="weibo">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>weibo</a>
+                  </span>
+                
             </div>
           
 
@@ -734,6 +800,20 @@
           
 
           
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                友情链接
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://fontawesome.dashgame.com/" title="Font Awsome" target="_blank">Font Awsome</a>
+                  </li>
+                
+              </ul>
+            </div>
           
 
           
@@ -759,12 +839,12 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Loki</span>
+  <span class="author" itemprop="copyrightHolder">阿拉丁与LED灯</span>
 
   
 </div>
 
-
+<!--
   <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
@@ -774,11 +854,31 @@
 
 
   <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
-
+-->
 
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      本站访问数 <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人次
+    </span>
+  
+
+  
+    <span class="site-pv">
+      本站总访问量 <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
+
 
 
 
@@ -824,6 +924,9 @@
 
 
 
+  
+  
+
 
 
 
@@ -858,6 +961,16 @@
   
   
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
   
 
 
@@ -920,9 +1033,348 @@
 
 
 
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'fnDKuRYW76ea1Iek2PTkXKBC-gzGzoHsz',
+        appKey: 'x3HlGWuIO3S7cLwWasy9fj3w',
+        placeholder: '请输入评论...',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
 
 
   
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
 
 
 
@@ -957,7 +1409,7 @@
         }
       });
     </script>
-    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 
